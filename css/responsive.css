@@ -221,10 +221,9 @@
     #banner .right-arrow {
         position: absolute;
         font-size: 20px;
-        color: #fff;
+        color: transparent;
         top: 50%;
         transform: translateY(-50%);
-        z-index: 9;
         background: transparent;
         border: none;
     }
@@ -236,7 +235,7 @@
     #banner .right-arrow::after {
         position: absolute;
         content: '';
-        background: #00ffeb;
+        background: transparent;
         height: 30px;
         width: 1px;
         top: 50%;
@@ -251,7 +250,7 @@
     #banner .left-arrow::before {
         position: absolute;
         content: '';
-        background: #00ffeb;
+        background: transparent;
         height: 30px;
         width: 1px;
         top: 50%;
