@@ -214,7 +214,7 @@
 }
 
 /*// Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 320px) {
+@media (max-width: 575.98px) {
     /*    banner style start*/
 
     #banner .left-arrow,
@@ -260,7 +260,7 @@
     }
 
     #banner .banner-slide .banner-text {
-        margin: 240px auto;
+        margin: 275px auto;
         text-align: center;
     }
 
@@ -274,7 +274,7 @@
         color: #fff;
         font-size: 30px;
         font-family: 'Roboto Condensed', sans-serif;
-        padding: 0 15px;
+        padding: 0 25px;
     }
 
     /*    banner style end*/
