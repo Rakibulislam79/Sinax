@@ -1,5 +1,11 @@
 $(function () {
 
+    //    preloader
+
+    $(window).on('load', function (event) {
+        $('.preloader').delay(500).fadeOut(500);
+    });
+
     //    here js for sticky menubar
 
     $(window).on('scroll', function (event) {
@@ -10,6 +16,21 @@ $(function () {
             $(".navbar").addClass("sticky");
         }
     });
+
+    //==== animate wow js
+
+    var wow = new WOW(
+        {
+          boxClass:     'wow',
+          animateClass: 'animated',
+          offset:       0,
+          mobile:       true,
+          live:         true,
+          scrollContainer: null,
+          resetAnimation: true,  
+        }
+      );
+      wow.init();
 
     var scroll = new SmoothScroll('a[href*="#"]', {
         speed: 300
@@ -67,13 +88,6 @@ $(function () {
         $('html, body').animate({
             scrollTop: 0,
         }, 500);
-    });
-
-
-    //    preloader
-
-    $(window).on('load', function (event) {
-        $('.preloader').delay(500).fadeOut(500);
     });
 
 });
